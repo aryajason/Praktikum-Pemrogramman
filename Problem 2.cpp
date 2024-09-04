@@ -8,16 +8,19 @@ int main()
  float a,b,c;
  cin>>a>>b>>c;
  
- float D= b*b -4*a*c;
+ float D= b*b-4*a*c;
  
- if (D<0) {
-     cout<<" The equation is No solution"<<endl;
- } else if (D==0)
+ if (D<0) 
+ {
+     cout<<" There are no real roots"<<endl;
+ } 
+ else if (D==0)
  {
    float x = (-b)/2*a;
    cout<<"x : "<<x<<endl;
  
- } else {
+ } else 
+ {
    float x1= ((b*-1)+ sqrt(D))/2*a;
    float x2= ((b*-1)- sqrt(D))/2*a;
    
